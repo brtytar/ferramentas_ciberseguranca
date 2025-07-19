@@ -2,7 +2,7 @@ import requests
 
 def get_http_data(host: str):
     try:
-        # Corrige a barra invertida se necessário
+        
         url = host.replace("\\", "/")
 
         response = requests.get(url)
